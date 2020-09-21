@@ -278,17 +278,17 @@ nav{
 }
 
 .grid-item-2 {
-    background: url("./images/hero-bcg.jpeg") center/cover no-repeat;
+    background: url("./public/images/hero-bcg.jpeg") center/cover no-repeat;
     z-index: 10;
 }
 
 .grid-item-4 {
-    background: url("images/Minimalist-Interior-Design-How-To.png") center/cover no-repeat;
+    background: url("./public/images/Minimalist-Interior-Design-How-To.png") center/cover no-repeat;
     z-index: 11;
 }
 
 .grid-item-3 {
-    background: url("images/IN_35950027_001.jpg") center/cover no-repeat;
+    background: url("./public/images/IN_35950027_001.jpg") center/cover no-repeat;
     z-index: 9;
 }
 
@@ -313,7 +313,7 @@ nav{
 
 .hero{
     min-height: calc(100vh - 60px); /* WOOOW*/
-    background: url("./images/hero-bcg.jpeg") center/cover no-repeat;
+    /* background: url("./images/hero-bcg.jpeg") center/cover no-repeat; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -398,7 +398,7 @@ nav{
     left:340px;
     width:600px;
     height: 400px;
-    background: url("images/livingroom-cat-new.jpg") center/cover no-repeat;
+    background: url("./public/images/livingroom-cat-new.jpg") center/cover no-repeat;
   }
 
   .grid-item-8 {
@@ -416,7 +416,7 @@ nav{
     left:140px;
     width:600px;
     height: 400px;
-    background: url("images/9850_Sofa_RS.jpg") center/cover no-repeat;
+    background: url("./public/images/9850_Sofa_RS.jpg") center/cover no-repeat;
   }
 
 .text-banner {

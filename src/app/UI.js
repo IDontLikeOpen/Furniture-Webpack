@@ -1,3 +1,5 @@
+import './src/main.css';
+
 import Storage from './Storage'
 
 const cartBtn = document.querySelector(".cart-btn");

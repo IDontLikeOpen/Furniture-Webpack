@@ -1,3 +1,5 @@
+import 'E:/wrk/shop again/src/main.css';
+
 export default class Storage {
  static saveProducts(products) {
    if (localStorage) {
