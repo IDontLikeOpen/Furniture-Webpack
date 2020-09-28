@@ -3,10 +3,6 @@ import UI from './UI'
 import Products from './Products'
 import gsap from 'gsap'
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import './src/main.css';
-
-
-
 
 export const run = () => {
  document.addEventListener("DOMContentLoaded", () => {

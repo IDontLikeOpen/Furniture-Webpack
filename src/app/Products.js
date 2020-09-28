@@ -1,5 +1,3 @@
-import './src/main.css';
-
 export default class Products {
  async getProducts() {
    // Local JSON data.

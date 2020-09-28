@@ -1,5 +1,3 @@
-import './src/main.css';
-
 export class Vars {
   cartBtn = document.querySelector(".cart-btn");
   closeCartBtn = document.querySelector(".close-cart");
