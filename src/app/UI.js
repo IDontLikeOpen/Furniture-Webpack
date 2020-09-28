@@ -7,7 +7,7 @@ const closeCartBtn = document.querySelector(".close-cart");
 const clearCartBtn = document.querySelector(".clear-cart");
 const  cartDOM = document.querySelector(".cart");
 const  cartOverlay = document.querySelector(".cart-overlay");
-const  cartItems = document.querySelector(".cart-items");
+const  cartItems = document.querySelectorAll(".cart-items");
 const  cartTotal = document.querySelector(".cart-total");
 const  cartContent = document.querySelector(".cart-content");
 const  productsDOM = document.querySelector(".products-center");
@@ -108,7 +108,7 @@ export default class UI {
     }
 
     cartTotal.textContent = parseFloat(tempTotal.toFixed(2));
-    cartItems.textContent = itemsTotal;
+    cartItems.forEach(item => item.textContent = itemsTotal)
   }
 
   addCartItem({ id, title, price, image, amount }) {
@@ -193,10 +193,14 @@ export default class UI {
   }
 
   clearCart() {
-    let cartItems = cart.map(({ id }) => id);
-    cartItems.forEach(this.removeItem.bind(this));
+    cartItems.forEach(item => {
+      let item = cart.map(({ id }) => id);
+    item.forEach(this.removeItem.bind(this));
     this.removeAllChild(cartContent);
     this.hideCart();
+    }
+      )
+    
   }
 
   removeItem(id) {

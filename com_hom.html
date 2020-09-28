@@ -6,52 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Comfy Home</title>
-    <!-- <link rel="stylesheet" href="style.css"> -->
     <link rel="stylesheet" href="./src/main.css">
 </head>
 
 <body>
-    <!-- <i class="fas fa-home"></i> -->
-    <!-- NAV -->
     <section>
-
-        <!-- <nav>
-            <div class="menu">
-                <ul>
-                    <li></li>
-                    <li><a href="#"><i class="fa fa-apple"></i></a></li>
-                    <li><a href="#" class="menu-item">Item</a></li>
-                    <li><a href="#" class="menu-item">Item</a></li>
-                    <li><a href="#" class="menu-item">Item</a></li>
-                    <li><a href="#" class="menu-item">Item</a></li>
-                    <li><a href="#" class="menu-item">Item</a></li>
-                    <li><a href="#" id="search"><i class="fa fa-search"></i></a></li>
-                    <li>
-                        <div class="cart-btn">
-                            <span class="nav-icon">
-                                <i class="fas fa-cart-plus"></i>
-                            </span>
-                            <div class="cart-items">
-                                0
-                            </div>
-                        </div>
-                    </li>
-                    <!-- <li><a href="#"><i class="fa fa-shopping-basket"></i></a></li> -->
-                <!-- </ul>
-                <div class="search-form">
-                    <input type="text" name="" placeholder="Search furniture">
-                </div>
-                <a class="close"><i class="fa fa-times"></i></a>y
-            </div>
-        </nav> --> 
-
-        <nav class="navbar">
-            <div class="navbar-center">
-                <span class="nav-icon">
-                    <i class="fas fa-bars"></i>
-                </span>
+        <div class="nav">
+            <input type="checkbox" id="nav-check">
+            <div class="nav-header">
+              <div class="nav-title">
                 <img src="./src/public/images/logo.svg" alt="store logo">
-                <div class="cart-btn">
+              </div>
+            </div>
+            <div class="cart-btn responsive">
+                <span class="nav-icon">
+                    <i class="fas fa-cart-plus"></i>
+                </span>
+                <div class="cart-items">
+                    0
+                </div>
+            </div>
+            <div class="nav-btn">
+              <label for="nav-check">
+                <span></span>
+                <span></span>
+                <span></span>
+              </label>
+            </div>
+            
+            <div class="nav-links">
+                <a href="#"><div class="cart-btn full">
                     <span class="nav-icon">
                         <i class="fas fa-cart-plus"></i>
                     </span>
@@ -59,12 +43,22 @@
                         0
                     </div>
                 </div>
+            </a>
             </div>
-        </nav>
+            <div class="nav-links">
+              <a href="#">Furniture</a>
+              <a href="#">Office Furniture</a>
+              <a href="#">Customization</a>
+              <a href="#">Hire Desiger</a>
+              <a href="#">About us</a>
+            </div>
+           
+            
+          </div>
         
 <div class="cont">
         <div class="grid-layout">
-            <div class="grid-item grid-item-1 span-2">
+            <div class="grid-item grid-item-1 span-2 visibility">
                 <div class="banner">
                 <h1 class="banner-title">
                     Furniture collection
@@ -72,21 +66,26 @@
                 <button class="banner-btn">
                     Shop now
                 </button>
-               
             </div>
             </div>
             <div class="grid-item grid-item-2 span-1">
-                <!-- <div class="img-banner img-banner-1"></div> -->
             </div>
-            <div class="grid-item span-1 grid-item-3">
-                <!-- <div class="img-banner img-banner-2"></div> --></div>
+            <div class="grid-item span-1 grid-item-3"></div>
             <div class="grid-item span-1 grid-item-4">
-                <!-- <div class="img-banner img-banner-3"></div> -->
+            </div>
+            <div class="grid-item grid-item-1 span-2 nonvisible">
+                <div class="banner">
+                <h1 class="banner-title">
+                    Furniture collection
+                </h1>
+                <button class="banner-btn">
+                    Shop now
+                </button>
+            </div>
             </div>
     </div>
 </div>
     </section>
-   
 
     <section class="products">
         <div class="section-title">
@@ -100,18 +99,40 @@
     </section>
 
     <section>
-        <div class="cont">
-        <h4>
-            Explore our solutions for your space
-        </h4>
+        <div class="cont rooms">
+            <div class="section-title">
+                <h2>Explore our solutions for your space</h2>
+            </div>
             <div class="grid-layout">
-                <div class="grid-item grid-item-5 span-3">Style</div>
+                <div class="grid-item grid-item-5 span-3"><div class="section-title">
+                    <h4>Simplicity is the key</h4>
+                </div></div>
                 <div class="grid-item grid-item-6 span-4"></div>
                 <div class="grid-item grid-item-7 span-4"></div>
-                <div class="grid-item grid-item-8 span-3"><div class="text-banner"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda esse officia perferendis minima ipsum eum.</div></div>
+                <div class="grid-item grid-item-8 span-3"><div class="section-title">Lorem ipsum dolor sit esse officia. <br><br> Assumenda esse officia perferendis minima ipsum eum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, ipsa!</div></div>
             </div>
         </div>
     </section>
+
+    <div class="cont person">
+        <div class="section-title">
+            <h2>The person behind Comfy House</h2>
+        </div>
+        <div class="grid-layout">
+            <div class="grid-item grid-item-1 span-2">
+            </div>
+            <div class="grid-item grid-item-2 span-1">
+                <div class="section-title">
+                    <h3>Laura Poitraas - Simplicity is the key</h3>
+                    <h4>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum, illo maiores error incidunt pariatur adipisci distinctio sed sapiente rem quis? Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h4>
+                    <br>
+                    <h4>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum, illo maiores error incidunt pariatur adipisci distinctio sed sapiente rem quis? Lorem ipsum.</h4>
+                    <br>
+                    <h4>Lorem ipsum dolor sit.</h4>
+                </div>
+            </div>
+    </div>
+</div>
 
     <div class="menu-overlay">
 
@@ -135,22 +156,22 @@
     </div>
 
     <footer class="footer-distributed">
- 
         <div class="footer-left">
-      <img src="">
-            <h3>About<span> GC Design</span></h3>
+      <img src="./src/public/images/logo.svg" alt="store logo">
 
             <p class="footer-links">
-                <a href="#">Home</a>
-                |
-                <a href="#">Blog</a>
-                |
+                <a href="#">Furniture</a>
+                 | 
+                <a href="#">Office Furniture</a>
+                 | 
+                <a href="#">Customization</a>
+                 | 
                 <a href="#">About</a>
-                |
-                <a href="#">Contact</a>
+                 | 
+                <a href="#">Hire Designer</a>
             </p>
 
-            <p class="footer-company-name">© 2020 GC Design</p>
+            <p class="footer-company-name">© 2020 Comfy House</p>
         </div>
 
         <div class="footer-center">
@@ -167,13 +188,13 @@
             </div>
             <div>
                 <i class="fa fa-envelope"></i>
-                <p><a href="mailto:support@eduonix.com">gabrielcrockett@gmail.com</a></p>
+                <p><a href="mailto:support@comfyhouse.com">gabrielcrockett@gmail.com</a></p>
             </div>
         </div>
         <div class="footer-right">
             <p class="footer-company-about">
                 <span>About the company</span>
-                We offer training and skill building courses across Technology, Design, Management, Science and Humanities.</p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio ea id, rerum nihil vitae doloribus aliquid quae dolorum doloremque ad facere dolores ducimus placeat amet.</p>
             <div class="footer-icons">
                 <a href="#"><i class="fa fa-facebook"></i></a>
                 <a href="#"><i class="fa fa-twitter"></i></a>
@@ -184,7 +205,6 @@
         </div>
     </footer>
 </body>
-<!-- <script src="products.json"></script> -->
 <script src="dist/main.js"></script>
 <script src="https://kit.fontawesome.com/8be4a77570.js" crossorigin="anonymous"></script>
 
